@@ -1,5 +1,4 @@
 import GetStarted from "../common/Buttons/GetStarted";
-import smallLogoIcon from "@/assets/logo-purple.svg";
 import Image from "next/image";
 
 const Hero = () => {
