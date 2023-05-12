@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="px-20 bg text-white">
+    <section className="px-20 py-10 bg text-white">
       <div className="py-11">
         <h1 className="txt-gradient-1 text-5xl inline-block text-transparent">
           Business banking with
