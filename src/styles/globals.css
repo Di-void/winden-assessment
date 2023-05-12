@@ -1,27 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: "Rubik";
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
+  .ad {
+    background-image: url(../assets/images/bg-image-1.png);
+  }
+  .bg {
+    background: linear-gradient(
+      90deg,
+      #060a23 0%,
+      #07041e 25%,
+      #07041e 75%,
+      #060a23 100%
+    );
+  }
+
+  .txt-gradient-1 {
+    background: linear-gradient(
+      98deg,
+      rgba(255, 255, 255, 0.88) 0%,
+      rgba(255, 255, 255, 0.56) 100%
+    );
+    background-clip: text;
+  }
+  .txt-gradient-2 {
+    background: linear-gradient(95deg, #9ee8fa 0%, rgba(255, 255, 255, 0) 16%),
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        135deg,
+        #a088ff 0%,
+        #a088ff 14%,
+        #37d7ff 81%,
+        #37d7ff 100%
+      );
+    background-clip: text;
+  }
 }
