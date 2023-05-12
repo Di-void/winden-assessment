@@ -12,7 +12,7 @@
 
 @layer utilities {
   .ad {
-    background-image: url(../assets/images/bg-image-1.png);
+    background-image: url(/bg-image-1.png);
   }
   .bg {
     background: linear-gradient(
