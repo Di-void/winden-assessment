@@ -1,1 +1,1 @@
-[screenshot](./winden.png)
+![](./winden.png)
