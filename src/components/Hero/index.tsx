@@ -1,24 +1,34 @@
 import GetStarted from "../common/Buttons/GetStarted";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="px-20 py-10 bg text-white">
       <div className="py-11">
-        <h1 className="txt-gradient-1 text-5xl inline-block text-transparent">
+        <h1 className="txt-gradient-1 text-5xl inline-block text-transparent py-2">
           Business banking with
         </h1>
 
         <div className="w-[60%] h-[70px] overflow-hidden">
-          <h1 className="text-7xl txt-gradient-2 inline-block text-transparent">
-            No credit check
-          </h1>
-          <h1 className="text-7xl txt-gradient-2 inline-block text-transparent">
-            Free Wires
-          </h1>
-          <h1 className="text-7xl txt-gradient-2 inline-block text-transparent">
-            Unlimited Rewards
-          </h1>
+          <motion.div
+            animate={{ y: [0, -75, -145, 0] }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+            }}
+            className="flex flex-col"
+          >
+            <h1 className="text-7xl txt-gradient-2 inline-block text-transparent">
+              No credit check
+            </h1>
+            <h1 className="text-7xl txt-gradient-2 inline-block text-transparent">
+              Free Wires
+            </h1>
+            <h1 className="text-7xl txt-gradient-2 inline-block text-transparent">
+              Unlimited Rewards
+            </h1>
+          </motion.div>
         </div>
 
         <p className="w-[55%] mt-4">

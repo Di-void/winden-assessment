@@ -7,6 +7,18 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      {/* <div
+        className="relative flex items-center 
+        justify-center h-screen overflow-hidden"
+      >
+        <video
+          src="/videos/bg-video"
+          autoPlay={true}
+          loop
+          muted
+          className="absolute"
+        ></video>
+      </div> */}
     </main>
   );
 }
